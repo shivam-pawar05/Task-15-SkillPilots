@@ -1,0 +1,14 @@
+AUTHORS (author_id PK, author_name, country)
+   1
+   |
+   | many
+   v
+BOOKS (book_id PK, author_id FK, title, price, quantity)
+   1
+   |
+   | many
+   v
+SALES (sale_id PK, book_id FK, quantity_sold, sale_date)
+
+One author can write many books.
+One book can appear in many sales records.
